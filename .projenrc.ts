@@ -15,10 +15,12 @@ const project = new typescript.TypeScriptProject({
   minNodeVersion: '22.22.2',
   prettier: true,
   minMajorVersion: 1,
+  repository: 'https://github.com/cdktn-contrib/cdktn-module-project'
 
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   // devDeps: [],             /* Build dependencies for this module. */
   // packageName: undefined,  /* The "name" in package.json. */
 });
+
 project.synth();

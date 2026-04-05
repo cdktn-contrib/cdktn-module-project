@@ -1,5 +1,9 @@
 {
   "name": "@cdktn-contrib/cdktn-module-project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cdktn-contrib/cdktn-module-project"
+  },
   "scripts": {
     "build": "npx projen build",
     "bump": "npx projen bump",
