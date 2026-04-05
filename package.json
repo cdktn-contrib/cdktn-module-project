@@ -1,5 +1,6 @@
 {
   "name": "@cdktn-contrib/cdktn-module-project",
+  "description": "Projen project to construct CDKTN (sub)module repository",
   "repository": {
     "type": "git",
     "url": "https://github.com/cdktn-contrib/cdktn-module-project"
@@ -30,6 +31,9 @@
     "projen": "^0.99.34",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "projen": "0.99.34"
   },
   "engines": {
     "node": ">= 22.22.2"
