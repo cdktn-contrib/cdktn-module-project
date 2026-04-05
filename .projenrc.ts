@@ -9,6 +9,7 @@ const project = new typescript.TypeScriptProject({
   keywords: ["cdktn", "terraform", "infrastructure", "iac", "projen"],
   authorOrganization: true,
   packageManager: javascript.NodePackageManager.PNPM,
+  pnpmVersion: "10.33.0",
   projenrcTs: true,
   projenVersion: "0.99.34",
   eslintOptions: {
@@ -25,6 +26,9 @@ const project = new typescript.TypeScriptProject({
   minMajorVersion: 1,
   repository: "https://github.com/cdktn-contrib/cdktn-module-project",
   deps: ["projen@0.99.34"],
+  devDeps: [
+    "shx@0.4.0", // until https://github.com/projen/projen/issues/4368 is resolved
+  ],
   workflowNodeVersion: "24",
 });
 
