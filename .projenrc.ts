@@ -1,8 +1,9 @@
-const { javascript } = require("projen");
-const project = new javascript.NodeProject({
-  defaultReleaseBranch: "main",
-  name: "cdktn-module-project",
+import { javascript, typescript } from 'projen';
+const project = new typescript.TypeScriptProject({
+  defaultReleaseBranch: 'main',
+  name: 'cdktn-module-project',
   packageManager: javascript.NodePackageManager.NPM,
+  projenrcTs: true,
 
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
