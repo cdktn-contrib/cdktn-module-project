@@ -1,9 +1,20 @@
-import { javascript, typescript } from 'projen';
+import { github, javascript, typescript } from 'projen';
+
 const project = new typescript.TypeScriptProject({
   defaultReleaseBranch: 'main',
-  name: 'cdktn-module-project',
+  name: '@cdktn-contrib/cdktn-module-project',
   packageManager: javascript.NodePackageManager.NPM,
   projenrcTs: true,
+  eslint: false,
+  jest: false,
+  githubOptions: {
+    projenCredentials: github.GithubCredentials.fromApp(),
+  },
+  npmAccess: javascript.NpmAccess.PUBLIC,
+  npmTrustedPublishing: true,
+  releaseToNpm: true,
+  minNodeVersion: '20.16.0',
+  prettier: true,
 
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
