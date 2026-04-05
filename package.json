@@ -12,6 +12,7 @@
     "compile": "npx projen compile",
     "default": "npx projen default",
     "eject": "npx projen eject",
+    "eslint": "npx projen eslint",
     "package": "npx projen package",
     "post-compile": "npx projen post-compile",
     "post-upgrade": "npx projen post-upgrade",
@@ -23,21 +24,37 @@
     "watch": "npx projen watch",
     "projen": "npx projen"
   },
+  "author": {
+    "name": "Joao Correia",
+    "email": "joaope@users.noreply.github.com",
+    "organization": true
+  },
   "devDependencies": {
     "@types/node": "^22",
+    "@typescript-eslint/eslint-plugin": "^8",
+    "@typescript-eslint/parser": "^8",
     "commit-and-tag-version": "^12",
     "constructs": "^10.0.0",
+    "eslint": "^9",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.5",
     "prettier": "^3.8.1",
-    "projen": "^0.99.34",
+    "projen": "0.99.34",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.2"
   },
   "dependencies": {
     "projen": "0.99.34"
   },
-  "engines": {
-    "node": ">= 22.22.2"
-  },
+  "keywords": [
+    "cdktn",
+    "iac",
+    "infrastructure",
+    "projen",
+    "terraform"
+  ],
   "devEngines": {
     "packageManager": {
       "name": "npm",
