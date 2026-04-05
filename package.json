@@ -21,6 +21,7 @@
     "test": "npx projen test",
     "unbump": "npx projen unbump",
     "upgrade": "npx projen upgrade",
+    "upgrade-bundled": "npx projen upgrade-bundled",
     "watch": "npx projen watch",
     "projen": "npx projen"
   },
