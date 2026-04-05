@@ -1,5 +1,8 @@
 import { DependencyType, github, javascript, typescript } from "projen";
-import { UpgradeDependencies, UpgradeDependenciesSchedule } from "projen/lib/javascript";
+import {
+  UpgradeDependencies,
+  UpgradeDependenciesSchedule,
+} from "projen/lib/javascript";
 import { ReleaseTrigger } from "projen/lib/release";
 
 const project = new typescript.TypeScriptProject({
