@@ -48,6 +48,7 @@
   "dependencies": {
     "projen": "0.99.34"
   },
+  "pnpm": {},
   "keywords": [
     "cdktn",
     "iac",
@@ -57,7 +58,7 @@
   ],
   "devEngines": {
     "packageManager": {
-      "name": "npm",
+      "name": "pnpm",
       "onFail": "ignore"
     }
   },

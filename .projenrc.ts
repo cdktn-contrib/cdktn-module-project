@@ -8,7 +8,7 @@ const project = new typescript.TypeScriptProject({
   authorEmail: 'joaope@users.noreply.github.com',
   keywords: ['cdktn', 'terraform', 'infrastructure', 'iac', 'projen'],
   authorOrganization: true,
-  packageManager: javascript.NodePackageManager.NPM,
+  packageManager: javascript.NodePackageManager.PNPM,
   projenrcTs: true,
   projenVersion: '0.99.34',
   eslintOptions: {
