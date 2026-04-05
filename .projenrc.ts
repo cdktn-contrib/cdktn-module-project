@@ -20,7 +20,8 @@ const project = new typescript.TypeScriptProject({
   repository: 'https://github.com/cdktn-contrib/cdktn-module-project',
   deps: [
     "projen@0.99.34",
-  ]
+  ],
+  workflowNodeVersion: '24',
 });
 
 project.synth();
