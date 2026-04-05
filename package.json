@@ -19,7 +19,7 @@
     "projen": "npx projen"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^22",
     "commit-and-tag-version": "^12",
     "constructs": "^10.0.0",
     "prettier": "^3.8.1",
@@ -28,7 +28,7 @@
     "typescript": "^6.0.2"
   },
   "engines": {
-    "node": ">= 20.16.0"
+    "node": ">= 22.22.2"
   },
   "devEngines": {
     "packageManager": {

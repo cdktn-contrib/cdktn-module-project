@@ -11,10 +11,10 @@ const project = new typescript.TypeScriptProject({
     projenCredentials: github.GithubCredentials.fromApp(),
   },
   npmAccess: javascript.NpmAccess.PUBLIC,
-  npmTrustedPublishing: true,
   releaseToNpm: true,
-  minNodeVersion: '20.16.0',
+  minNodeVersion: '22.22.2',
   prettier: true,
+  minMajorVersion: 1,
 
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
